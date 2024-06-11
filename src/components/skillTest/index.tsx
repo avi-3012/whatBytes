@@ -236,7 +236,7 @@ const SkillTestContent = () => {
           <div className="mt-3 mb-6">You have scored {score} out of 15!</div>
           <div className="h-[150px] w-[150px] mx-auto">
             <CircularProgressbarWithChildren
-              value={80}
+              value={(score as unknown as number)*100/15}
               strokeWidth={15}
               styles={buildStyles({
                 pathColor: "#2564eb",
